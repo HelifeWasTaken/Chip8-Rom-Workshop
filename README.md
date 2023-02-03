@@ -1,6 +1,8 @@
 # Chip8-Rom-Workshop
 Learn Chip-8 Rom dev
 
+By Mattis DALLEAU
+
 # Chip8 rom programming tutorial
 
 Here we start as low as possible, in my next workshops I will show you how to graphics computing either with n64 SDK or with OpenGL.
