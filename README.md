@@ -7,17 +7,22 @@ By Mattis DALLEAU
 
 Here we start as low as possible, in my next workshops I will show you how to graphics computing either with n64 SDK or with OpenGL.
 
+## Disclaimer
+
+This was a simple tutorial for EPITECH students to follow. I was there with them...
+
+It may seem hard for anyone alone not familiar with how emulators works and bytecode interpretation how to do thoses exercices.
+
 ## Preparation
 
-First of all, you need to clone this repository it will feature an emulator written in C with SDL and a hex editor written in python,
-to write your programs.
+First of all, you need to clone this repository it will feature an emulator written in C with SDL (not made by me) to run your programs.
+
+For the code i suggest you to use your favorite hexadecimal editor.
 
 ```bash
 ./install.sh # Will install the dependencies for fedora and compile the emulator
 
 ./chip8 # Will run the emulator you will be then asked to enter the path to the rom you want to run
-
-python3 hex_editor.py file_name # Will run the hex editor
 ```
 
 ## The chip8
