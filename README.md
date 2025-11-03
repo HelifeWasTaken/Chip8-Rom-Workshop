@@ -210,24 +210,24 @@ Here is the pseudo code:
     se v1, 0x7 ; if the key pressed is the left arrow
     jmp :move_right ; move the sprite to the right
     sub v2, 0x01 ; decrease the x coordinate by 1
-    jmp draw_at_new_position ; draw the sprite at the new position
+    jmp :draw_at_new_position ; draw the sprite at the new position
 
 :move_right
 
     se v1, 0x9 ; if the key pressed is the right arrow
     jmp :move_up; move the sprite to the up
     add v2, 0x01 ; increase the x coordinate by 1
-    jmp draw_at_new_position ; draw the sprite at the new position
+    jmp :draw_at_new_position ; draw the sprite at the new position
 
 :move_up
     se v1, 0x5 ; if the key pressed is the up arrow
-    jmp draw_at_new_position ; draw the sprite at the new position
+    jmp :move_down; ; draw the sprite at the new position
     sub v3, 0x01 ; decrease the y coordinate by 1
-    jmp draw_at_new_position ; draw the sprite at the new position
+    jmp :draw_at_new_position ; draw the sprite at the new position
 
 :move_down
     se v1, 0x8 ; if the key pressed is the down arrow
-    jmp draw_at_new_position ; draw the sprite at the new position
+    jmp :draw_at_new_position ; draw the sprite at the new position
     add v3, 0x01 ; increase the y coordinate by 1
 
 :draw_at_new_position
